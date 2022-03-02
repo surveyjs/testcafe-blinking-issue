@@ -1,0 +1,14 @@
+{
+  "name": "surveyjs-testcafe-blinking-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe -c 4 -q chrome:headless ./test.ts --selector-timeout 1500 --reporter minimal"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.18.4"
+  }
+}
