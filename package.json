@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe -c 4 -q chrome:headless ./test.ts --selector-timeout 1500 --reporter minimal"
+    "test": "testcafe -c 4 -q chrome:headless ./test.ts --selector-timeout 1500 --reporter minimal",
+    "playwright": "playwright test",
+    "playwright-debug": "set PWDEBUG=1&& playwright test --headed --browser=chromium"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "testcafe": "^1.18.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.19.2"
   }
 }
